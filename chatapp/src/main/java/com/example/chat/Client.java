@@ -11,14 +11,14 @@ import java.util.Calendar;
 import javax.swing.*;
 import javax.swing.border.EmptyBorder;
 
-public class Server extends JFrame implements ActionListener{
+public class Client extends JFrame implements ActionListener{
 
     JTextField message;
     JButton sent;
     JPanel area;
     Box vertical = Box.createVerticalBox();
 
-    Server(){
+    Client(){
         setLayout(null);
 
         JPanel p1 = new JPanel();
@@ -42,7 +42,7 @@ public class Server extends JFrame implements ActionListener{
             }
         });
 
-        ImageIcon i4 = new ImageIcon(getClass().getResource("icons/1.png"));
+        ImageIcon i4 = new ImageIcon(getClass().getResource("icons/2.png"));
         Image i5 = i4.getImage().getScaledInstance(50, 50, Image.SCALE_DEFAULT);
         ImageIcon i6 = new ImageIcon(i5);
 
@@ -70,7 +70,7 @@ public class Server extends JFrame implements ActionListener{
         Image i14 = i13.getImage().getScaledInstance(10, 25, Image.SCALE_DEFAULT);
         ImageIcon i15 = new ImageIcon(i14);
 
-        JLabel name = new JLabel("Sahil");
+        JLabel name = new JLabel("Mamma");
         name.setBounds(110, 15, 100, 18);
         name.setFont(new Font("Raleway", Font.BOLD, 20));
         name.setForeground(Color.WHITE);
@@ -104,13 +104,13 @@ public class Server extends JFrame implements ActionListener{
         add(sent);
 
         setSize(450, 700);
-        setLocation(200, 50);
+        setLocation(800, 50);
         getContentPane().setBackground(Color.WHITE);
         setUndecorated(true)    ;
         setVisible(true);
     }
     public static void main(String[] args) {
-        new Server();
+        new Client();
     }
 
     @Override
