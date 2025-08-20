@@ -13,7 +13,7 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 
 import javax.swing.*;
-import javax.swing.border.Border;
+// import javax.swing.border.Border;
 import javax.swing.border.EmptyBorder;
 
 public class Server implements ActionListener{
@@ -135,6 +135,7 @@ public class Server implements ActionListener{
                     vertical.add(left);
 
                     f.validate();
+                    skt.close();
                 }
             }
         }

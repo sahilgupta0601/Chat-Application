@@ -135,6 +135,7 @@ public class Client implements ActionListener{
                 area.add(vertical, BorderLayout.PAGE_START);
 
                 f.validate();
+                s.close();
             }
         }catch (Exception e){
             e.printStackTrace();
