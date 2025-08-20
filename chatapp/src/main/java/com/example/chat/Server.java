@@ -135,7 +135,7 @@ public class Server implements ActionListener{
                     vertical.add(left);
 
                     f.validate();
-                    skt.close();
+                    // skt.close();
                 }
             }
         }
